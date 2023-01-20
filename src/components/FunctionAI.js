@@ -25,12 +25,10 @@ const FunctionAI = () => {
   const generateResponse = async () => {
     let newText = functionText + "\n\nThe time complexity of this function is";
     newText = newText.replace(/\n/g, "\\n");
-    setFunctionText(newText);
-    console.log(newText);
 
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: functionText,
+      prompt: newText,
       temperature: 0,
       max_tokens: 64,
       top_p: 1.0,

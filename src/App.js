@@ -21,6 +21,13 @@ const App = () => {
       header: "Function AI",
       subHeader: "Find the time complexity of a function.",
     },
+    {
+      id: 3,
+      route: "/qa-ai",
+      icon: function_icon,
+      header: "Question Answer AI",
+      subHeader: "Answer questions based on existing knowledge",
+    },
   ];
 
   const renderList = navigationList.map((item) => {
