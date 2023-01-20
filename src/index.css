@@ -1,0 +1,11 @@
+body {
+  background-color: beige;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  /* padding: 150px; */
+}
